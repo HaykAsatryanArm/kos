@@ -1,0 +1,86 @@
+.reviews {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 5%;
+    &__slide {
+        max-width: 34rem;
+        height: 26.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(0.5rem);
+        border-radius: 0.75rem;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        padding: 1.5rem;
+        &Person {
+            width: 100%;
+            height: 10rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &__mother {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                &Name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #ffffff;
+                    margin-top: 0.5rem;
+                }
+                &Info {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #ffffff;
+                    margin-top: 0.5rem;
+                }
+            }
+            &__child {
+                display: flex;
+                flex-flow: column;
+                align-items: flex-start;
+                &Name {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #ffffff;
+                    margin-top: 0.5rem;
+                }
+                &Info {
+                    font-weight: 400;
+                    font-size: 1rem;
+                    color: #ffffff;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+        &Text {
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.7rem;
+            color: rgba(239, 239, 239, 0.8);
+        }
+        &Rate {
+            & img {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .reviews {
+        &__slide {
+            height: 31.3rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        &__slide {
+            max-width: unset;
+            height: 34rem;
+        }
+    }
+}

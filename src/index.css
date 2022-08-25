@@ -1,0 +1,147 @@
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Thin.otf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-ExtraLight.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Light.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Regular.otf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Medium.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-SemiBold.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Bold.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-ExtraBold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Montserrat arm";
+  src: url("./Assets/Fonts/Montserratarm-Black.otf");
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  background: url(./Assets/Images/Body/Background.png), linear-gradient(180deg, #2B267A 0%, #645AC2 100%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  font-family: "Montserrat arm" !important;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  padding: 0 9.5rem;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+@media (max-width: 1920px) {
+  .container {
+    padding: 0 7.5rem;
+  }
+}
+
+@media (max-width: 1536px) {
+  .container {
+    padding: 0 6.3rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 5.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 3.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 3.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 3.1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    padding: 0 2.9rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 2.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 0 2.5rem;
+  }
+}

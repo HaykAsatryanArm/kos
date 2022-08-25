@@ -1,0 +1,17 @@
+.title {
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+    & span {
+        color: #00BF90;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+    }
+}

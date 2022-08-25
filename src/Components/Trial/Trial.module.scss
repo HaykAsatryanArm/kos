@@ -1,0 +1,121 @@
+.trial {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 4rem;
+    background: url(../../Assets/Images/Body/Bullet.png), url(../../Assets/Images/Body/Bullet.png), url(../../Assets/Images/Body/Bullet.png);
+    background-repeat: no-repeat;
+    background-position: top 10% left 15%, top 52% right 22%, bottom left 40%;
+    padding-top: 5%;
+    &__content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &Image {
+            width: 18rem;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            & img {
+                width: 100%;
+            }
+            &__button {
+                margin-top: 1.5rem;
+            }
+        }
+        &Text {
+            width: 54.7%;
+            height: 100%;
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around;
+            &__box {
+                max-width: 34rem;
+                height: auto;
+                display: inline-flex;
+                padding: 1rem 2rem;
+                & img {
+                    width: 2rem;
+                    height: 2rem;
+                    margin-right: 1rem;
+                }
+                &Text {
+                    color: #EFEFEF;
+                    line-height: 2rem;
+                }
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 1rem;
+                margin-bottom: 1rem;
+                &:nth-child(odd) {
+                    align-self: flex-start;
+                }
+                &:nth-child(even) {
+                    align-self: flex-end;
+                }
+                &:first-child {
+                    max-width: 34rem;
+                }
+                &:nth-child(2) {
+                    max-width: 34rem;
+                }
+                &:nth-child(3) {
+                    max-width: 34rem;
+                }
+                &:nth-child(4) {
+                    max-width: 25.4375rem;
+                }
+                &:last-child {
+                    max-width: 25.125rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-wdith: 840px) {
+    .trial {
+        &__content {
+            &Image {
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .trial {
+        &__content {
+            display: flex;
+            flex-flow: column-reverse;
+            &Text {
+                width: 100%;
+            }
+            &Image {
+                & img {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .trial {
+        &__content {
+            &Text {
+                & img {
+                    margin: 0;
+                    margin-bottom: 0.5rem;
+                }
+                &__box {
+                    flex-flow: column;
+                    align-items: center;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

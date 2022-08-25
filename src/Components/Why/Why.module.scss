@@ -1,0 +1,408 @@
+.why {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 4rem;
+    background: url(../../Assets/Images/Planets/Pink_planet.png);
+    background-size: 11rem 11rem;
+    background-repeat: no-repeat;
+    background-position: right 4vw bottom 0;
+    padding-top: 5%;
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: url(../../Assets/Images/Body/Bullet.png);
+        background-repeat: no-repeat;
+        background-position: bottom 5% right 25%;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &Text {
+            width: 49.3%;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            &__first {
+                width: 100%;
+                height: 9.7rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+
+                &Item {
+                    width: 48.4%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0.75rem;
+                    padding-left: 1rem;
+                    padding-top: 1.5rem;
+                    padding-right: 1rem;
+                    &__title {
+                        width: 100%;
+                        display: flex;
+                        & img {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                        &Name {
+                            margin-top: 0.25rem;
+                            margin-left: 1rem;
+                            font-weight: 500;
+                            font-size: 1.25rem;
+                            line-height: 1.5rem;
+                            color: #F8F8F8;
+                        }
+                    }
+                    &__text {
+                        font-size: 0.9rem;
+                        line-height: 1.25rem;
+                        font-weight: 400;
+                        margin-top: 1rem;
+                        color: rgb(239, 239, 239, 0.8);
+                    }
+                }
+            }
+            &__second {
+                width: 100%;
+                height: 14rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 1.5rem;
+
+                &Item {
+                    width: 48.4%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0.75rem;
+                    padding-left: 1rem;
+                    padding-top: 1.5rem;
+                    padding-right: 1rem;
+                    &__title {
+                        width: 100%;
+                        display: flex;
+                        & img {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                        &Name {
+                            margin-top: 0.25rem;
+                            margin-left: 1rem;
+                            font-weight: 500;
+                            font-size: 1.25rem;
+                            line-height: 1.5rem;
+                            color: #F8F8F8;
+                        }
+                    }
+                    &__text {
+                        font-size: 0.9rem;
+                        line-height: 1.25rem;
+                        font-weight: 400;
+                        margin-top: 1rem;
+                        color: rgb(239, 239, 239, 0.8);
+                    }
+                }
+            }
+            &__third {
+                width: 100%;
+                height: 12.7rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &Item {
+                    width: 48.4%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0.75rem;
+                    padding-left: 1rem;
+                    padding-top: 1.5rem;
+                    padding-right: 1rem;
+                    &__title {
+                        width: 100%;
+                        display: flex;
+                        & img {
+                            width: 2rem;
+                            height: 2rem;
+                        }
+                        &Name {
+                            margin-top: 0.25rem;
+                            margin-left: 1rem;
+                            font-weight: 500;
+                            font-size: 1.25rem;
+                            line-height: 1.5rem;
+                            color: #F8F8F8;
+                        }
+                    }
+                    &__text {
+                        font-size: 0.9rem;
+                        line-height: 1.25rem;
+                        font-weight: 400;
+                        margin-top: 1rem;
+                        color: rgb(239, 239, 239, 0.8);
+                    }
+                }
+            }
+        }
+        &Image {
+            width: 49.3%;
+            height: auto;
+            position: relative;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1536px) {
+    .why {
+        &__content {
+            &Text {
+                &__first {
+                    height: 11rem;
+                }
+                &__second {
+                    height: 15.7rem;
+                }
+                &__third {
+                    height: 15.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .why {
+        &__content {
+            &Text {
+                &__first {
+                    height: 13rem;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        padding-top: 1rem;
+                        &__title {
+                            &Name {
+                                font-size: 1.1rem;
+                                margin: 0;
+                                margin-left: 0.5rem;
+                            }
+                        }
+
+                    }
+                }
+                &__second {
+                    height: 20.2rem;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        padding-top: 1rem;
+                        &__title {
+                            &Name {
+                                font-size: 1.1rem;
+                                margin: 0;
+                                margin-left: 0.5rem;
+                            }
+                        }
+                    }
+                }
+                &__third {
+                    height: 16rem;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        align-items: center;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        padding-top: 1rem;
+                        &__title {
+                            &Name {
+                                font-size: 1.1rem;
+                                margin: 0;
+                                margin-left: 0.5rem;
+                                inline-size: 77%;
+                                overflow-wrap: break-word;
+                                hyphens: manual;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .why {
+        &__content {
+            &Text {
+                &__first {
+                    height: 14rem;
+                    text-align: center;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        &__title {
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                            text-align: center;
+                            &Name {
+                                margin: 0;
+                                margin-top: 0.5rem;
+                                font-size: 0.86rem;
+                                line-height: 1.3rem;
+                            }
+                        }
+                        &__text {
+                            margin-top: 0.5rem;
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                        }
+                    }
+                }
+                &__second {
+                    height: 20rem;
+                    text-align: center;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        &__title {
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                            text-align: center;
+                            &Name {
+                                margin: 0;
+                                margin-top: 0.5rem;
+                                font-size: 0.86rem;
+                                line-height: 1.3rem;
+                            }
+                        }
+                        &__text {
+                            margin-top: 0.5rem;
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                            inline-size: 100%;
+                            overflow-wrap: break-word;
+                            hyphens: manual;
+                        }
+                    }
+                }
+                &__third {
+                    height: 18rem;
+                    text-align: center;
+                    &Item {
+                        display: flex;
+                        flex-flow: column;
+                        &__title {
+                            display: flex;
+                            flex-flow: column;
+                            align-items: center;
+                            text-align: center;
+                            &Name {
+                                margin: 0;
+                                margin-top: 0.5rem;
+                                font-size: 0.86rem;
+                                line-height: 1.3rem;
+                            }
+                        }
+                        &__text {
+                            margin-top: 0.5rem;
+                            font-size: 0.8rem;
+                            line-height: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .why {
+        background-size: 8rem 8rem;
+        background-position: right 4vw top 8vw;
+        &__content {
+            flex-flow: column-reverse;
+            &Text {
+                width: 100%;
+            }
+            &Image {
+                width: 60%;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .why {
+        background-size: 5rem 5rem;
+        background-position-x: 60vw;
+        background-position-y: 15vw;
+        &__content {
+            &Text {
+                &__first {
+                    flex-flow: column;
+                    height: auto;
+                    &Item {
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 1rem;
+                        &:first-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+                &__second {
+                    flex-flow: column;
+                    height: auto;
+                    &Item {
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 1rem;
+                        &:first-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+                &__third {
+                    flex-flow: column;
+                    height: auto;
+                    &Item {
+                        width: 100%;
+                        height: auto;
+                        padding-bottom: 1rem;
+                        &:first-child {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

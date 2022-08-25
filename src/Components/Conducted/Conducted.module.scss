@@ -1,0 +1,56 @@
+.conducted {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 3rem;
+    padding-top: 5%;
+    background: url(../../Assets/Images/Conducted/Astronaut.png),
+    url(../../Assets/Images/Planets/Pluto.png),
+    url(../../Assets/Images/Planets/Pink_planet.png),
+    url(../../Assets/Images/Planets/Mars.png);
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 19.6875rem 19.6875rem, 10rem 10rem, 9.1rem 9.1rem, 10rem 10rem;
+    background-position: right 20% bottom, right 10% top 5%, left 5% top 10%, left 15% bottom 5%;
+    &__content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        & span {
+            font-size: 4.5em;
+            font-weight: 600;
+            color: #00BF90;
+            text-shadow: 0px 4px 20px rgba(0, 191, 144, 0.1);
+            letter-spacing: 1rem;
+            margin-right: -1rem;
+        }
+        &Button {
+            margin-top: 3rem;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .conducted {
+        background-size: 15rem 15rem, 5rem 5rem, 4.1rem 4.1rem, 6rem 6rem;
+        background-position: right 5% bottom, right 10% top 5%, left 5% top 10%, left 15% bottom 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .conducted {
+        background: url(../../Assets/Images/Planets/Pluto.png),
+        url(../../Assets/Images/Planets/Pink_planet.png),
+        url(../../Assets/Images/Planets/Mars.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 5rem 5rem, 3rem 3rem, 5rem 5rem;
+        background-position: right 10% top 5%, left 5% top 10%, left 15% bottom 5%;
+        &__content {
+            & span {
+                font-size: 3.5rem;
+            }
+        }
+    }
+}

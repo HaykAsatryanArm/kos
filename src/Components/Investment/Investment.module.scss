@@ -1,0 +1,138 @@
+.investment {
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    background: url(../../Assets/Images/Planets/Pink_planet.png), url(../../Assets/Images/Body/Bullet.png);
+    background-size: 9.1875rem 9.1875rem, 7.315rem 0.65875rem;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 10% top 6rem, right 8% center;
+    &__content {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &Investment {
+            width: 25.125rem;
+            height: 35.875rem;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column;
+            margin: 1.5rem;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 10px rgba(13, 24, 33, 0.05);
+            &__name {
+                width: 100%;
+                height: 3.5rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+                color: #F8F8F8;
+            }
+            &__lesson {
+                width: 100%;
+                height: auto;
+                padding: 1.5rem;
+                font-weight: 600;
+                font-size: 1.5rem;
+                color: #102231;
+            }
+            &__price {
+                width: calc(100% - 3rem);
+                display: flex;
+                justify-content: space-between;
+                margin: 0 1.5rem;
+                padding-bottom: 1rem;
+                border-bottom: 1px solid rgba(13, 24, 33, 0.2);
+                &Lesson {
+                    display: inline-flex;
+                    flex-flow: column;
+                    &__price {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    &__name {
+                        font-weight: 400;
+                        font-size: 1.125rem;
+                        color: #4e565c;
+                    }
+                }
+                &Package {
+                    display: inline-flex;
+                    flex-flow: column;
+                    &__price {
+                        font-size: 2rem;
+                        font-weight: 700;
+                    }
+                    &__name {
+                        font-weight: 400;
+                        font-size: 1.125rem;
+                        color: #4e565c;
+                    }
+                }
+            }
+            &__list {
+                width: calc(100% - 3rem);
+                margin: 0 1.5rem;
+                position: relative;
+                margin-top: 1rem;
+                &Item {
+                    padding-left: 1rem;
+                    line-height: 2rem;
+                    display: flex;
+                    position: relative;
+                    &__circle {
+                        min-width: 10px;
+                        max-width: 10px;
+                        min-height: 10px;
+                        max-height: 10px;
+                        background: #BB6BD9;
+                        border-radius: 50%;
+                        margin-top: 0.5rem;
+                        margin-right: 0.5rem;
+                    }
+                }
+            }
+            &__button {
+                margin: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .investment {
+        &__content {
+            &Investment {
+                margin-left: 0;
+                margin-right: 0;
+                height: auto;
+                &__price {
+                    flex-flow: column;
+                    &Package {
+                        margin-top: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 508px) {
+    .investment {
+        &__content {
+            &Investment {
+                word-break: break-word;
+                &__button {
+                    word-break: keep-all;
+                }
+            }
+        }
+    }
+}

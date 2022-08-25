@@ -1,0 +1,99 @@
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    padding: 3rem 0 1.5rem 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px 20px 0px 0px;
+    &Container {
+        margin: 0 21%;
+        display: flex;
+        flex-flow: column;
+    }
+    &__content {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid rgba(248, 248, 248, 0.2);
+        &Text {
+            width: 62.82%;
+            height: auto;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            &__logo {
+                margin-bottom: 1.5rem;
+                & img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+            &__info {
+                font-weight: 400;
+                font-size: 1em;
+                color: #efefef;
+                line-height: 1.25rem;
+            }
+        }
+        &Contact {
+            max-width: 28%;
+            height: auto;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            &__title {
+                font-size: 1.125em;
+                font-weight: 500;
+                color: #ffffff;
+            }
+            &__icons {
+                display: flex;
+                margin-top: 1.5rem;
+                flex-wrap: wrap;
+                &Box {
+                    width: 3rem;
+                    height: 3rem;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 1rem;
+                    background: #00BF90;
+                    border-radius: 0.5rem;
+                    &:last-child {
+                        margin: 0;
+                    }
+                    margin-top: 0.5rem !important;
+                    & img {
+                        width: 1.5rem;
+                        height: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    &__copyright {
+        font-weight: 400;
+        font-size: 0.875em;
+        color: #EFEFEF;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        &__content {
+            flex-flow: column;
+            &Text {
+                width: 100%;
+                padding-bottom: 1rem;
+            }
+            &Contact {
+                padding-top: 1rem;
+                border-top: 1px solid rgba(248, 248, 248, 0.2);
+                max-width: 100%;
+            }
+        }
+    }
+}
