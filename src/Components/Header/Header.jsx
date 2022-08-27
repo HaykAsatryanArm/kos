@@ -52,7 +52,7 @@ const Header = () => {
           {
             nav.map(navItem => (
               <li className={`${styles.header__navItem} ${navItem.button ? styles.button : ''}`} key={navItem.id}>
-                <Link smooth to={`/${navItem.url}`}>
+                <Link smooth to={`${navItem.url}`}>
                   {
                     navItem.button
                     ?
