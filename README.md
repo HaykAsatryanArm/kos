@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+View website by clicking [this](https://haykasaryan.github.io/kos/) link.
 
 ## Available Scripts
 
