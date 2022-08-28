@@ -2,6 +2,8 @@
 
 View website by clicking [this](https://haykasaryan.github.io/kos/) link.
 
+###### Created with React.js
+
 ## Available Scripts
 
 In the project directory, you can run:
