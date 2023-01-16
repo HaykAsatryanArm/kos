@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/kos/static/css/main.89259676.css",
+    "main.js": "/kos/static/js/main.b61072d4.js",
+    "static/media/Background.png": "/kos/static/media/Background.8ae373023a8376d50d1c.png",
+    "static/media/PC.png": "/kos/static/media/PC.a6c3f0d32b88439b25e9.png",
+    "static/media/Astronaut.png": "/kos/static/media/Astronaut.11d5c6b8617837edcbed.png",
+    "static/media/Orange_planetBig_Blur.png": "/kos/static/media/Orange_planetBig_Blur.48a51d5c643785144980.png",
+    "static/media/Montserratarm-SemiBold.otf": "/kos/static/media/Montserratarm-SemiBold.d08059a6b831354c2276.otf",
+    "static/media/Montserratarm-Bold.otf": "/kos/static/media/Montserratarm-Bold.2733913afd5dde28d49e.otf",
+    "static/media/Montserratarm-ExtraBold.otf": "/kos/static/media/Montserratarm-ExtraBold.1c2c9c2a164151d5265d.otf",
+    "static/media/Montserratarm-Medium.otf": "/kos/static/media/Montserratarm-Medium.00bad467823fc192af2c.otf",
+    "static/media/Montserratarm-Regular.otf": "/kos/static/media/Montserratarm-Regular.5691450002b4287d010a.otf",
+    "static/media/Montserratarm-Black.otf": "/kos/static/media/Montserratarm-Black.b2de9c93dc44679a029c.otf",
+    "static/media/Montserratarm-Light.otf": "/kos/static/media/Montserratarm-Light.5aeadeac62599fbeaca3.otf",
+    "static/media/Montserratarm-ExtraLight.otf": "/kos/static/media/Montserratarm-ExtraLight.45ce171108961d4acacf.otf",
+    "static/media/Montserratarm-Thin.otf": "/kos/static/media/Montserratarm-Thin.da85776987743b2d266c.otf",
+    "static/media/Rocket.png": "/kos/static/media/Rocket.40a0676159bc5de56adc.png",
+    "static/media/Orange_planetBig.png": "/kos/static/media/Orange_planetBig.b79a3b610ee72741cb94.png",
+    "static/media/Pink_planet.png": "/kos/static/media/Pink_planet.5e9aee43de053eb0e931.png",
+    "static/media/Blue_planet.png": "/kos/static/media/Blue_planet.7ef87025f32b01bcf143.png",
+    "static/media/Smoke.png": "/kos/static/media/Smoke.b8cb6a180416167ccead.png",
+    "static/media/Saturn.png": "/kos/static/media/Saturn.fcc9126abc5f8a9810d7.png",
+    "static/media/Red.png": "/kos/static/media/Red.1adc691a5a2ed347d6b6.png",
+    "static/media/Orange_planetSmall.png": "/kos/static/media/Orange_planetSmall.8f494713bb947b368005.png",
+    "static/media/Pluto.png": "/kos/static/media/Pluto.784af42e346d1963136c.png",
+    "static/media/Mars.png": "/kos/static/media/Mars.e7b3b2c50ccd5d53ca0f.png",
+    "static/media/Child.png": "/kos/static/media/Child.09ebd113add3fd10bfe5.png",
+    "static/media/Mother.png": "/kos/static/media/Mother.1505c2f0d2c4a0153c9a.png",
+    "index.html": "/kos/index.html",
+    "main.89259676.css.map": "/kos/static/css/main.89259676.css.map",
+    "main.b61072d4.js.map": "/kos/static/js/main.b61072d4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89259676.css",
+    "static/js/main.b61072d4.js"
+  ]
+}
