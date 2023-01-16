@@ -1,0 +1,97 @@
+.bid {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 5% 0;
+    background: url(../../Assets/Images/Planets/Mars.png), url(../../Assets/Images/Planets/Red.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 10rem 10rem, 6rem auto;
+    background-position: left 5% top 1%, right 5% bottom 5%;
+
+    &__content {
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &Image {
+            width: 35%;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &Form {
+            width: 62%;
+            max-width: 42.875rem;
+            height: auto;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            display: inline-flex;
+            flex-flow: column;
+
+            &__title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #F8F8F8;
+            }
+
+            &__filed {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-flow: column;
+                margin-top: 1.5rem;
+                color: #FFFFFF;
+                font-weight: 500;
+                font-size: 1rem;
+                &:focus-visible {
+                    outline: 0;
+                }
+
+                &Input {
+                    background: #FFFFFF;
+                    border: 1px solid rgba(78, 86, 92, 0.3);
+                    border-radius: 0.5rem;
+                    padding: 1rem 1.25rem;
+                    margin-top: 0.5rem;
+                    &:focus-visible {
+                        outline: 0;
+                    }
+                }
+            }
+            &__submit {
+                width: 12.1875rem;
+                padding: 1rem 3rem;
+                background: #00BF90;
+                box-shadow: 0.5rem 1rem 1.875rem rgba(0, 191, 144, 0.1);
+                border-radius: 0.5rem;
+                border: none;
+                font-weight: 500;
+                font-size: 1.125rem;
+                color: #F8F8F8;
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .bid {
+        background-size: 5rem 5rem, 3rem auto;
+        &__content {
+            justify-content: center;
+            &Image {
+                display: none;
+            }
+            &Form {
+                width: 100%;
+                padding: 1.5rem;
+            }
+        }
+    }
+}

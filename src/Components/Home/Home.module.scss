@@ -1,0 +1,226 @@
+.home {
+    position: relative;
+    width: 100%;
+    height: 68.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background:
+        url(../../Assets/Images/Home/Rocket.png),
+        url(../../Assets/Images/Home/Smoke.png),
+        url(../../Assets/Images/Planets/Orange_planetBig_Blur.png),
+        url(../../Assets/Images/Planets/Orange_planetSmall.png),
+        url(../../Assets/Images/Planets/Blue_planet.png);
+    background-size:
+        33.278125rem 33.278125rem,
+        calc(61rem * 85 * 1585 / (100 * 977)) 85%,
+        31.625rem 31.625rem,
+        10.375rem 10.375rem,
+        15.25rem 15.25rem;
+    background-repeat:
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position:
+        left calc(61rem * 85 * 1585 / (100 * 977) - 25.278125rem / 2) top calc(50% - 9.5rem),
+        left center,
+        right -6.9vw bottom 0,
+        left 52.4vw top 5vw,
+        left 45.3125vw bottom 5.4vw;
+    backdrop-filter: 
+    unset, unset, blur(6px), unset, unset;
+    &__text {
+        width: 40.7%;
+        &Title {
+            font-size: 2.625em;
+            font-weight: 500;
+            color: #102231;
+            & span {
+                color: #4472CA;
+            }
+        }
+        &Subtitle {
+            font-size: 1.2em;
+            font-weight: 400;
+            color: #4E565C;
+            margin-top: 1.5rem;
+        }
+        &Button {
+            margin-top: 4.5rem;
+        }
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        background: url(../../Assets/Images/Body/Bullet.png),
+        url(../../Assets/Images/Body/Bullet.png),
+        url(../../Assets/Images/Body/Bullet.png);
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: left 30% top 15%, bottom 40% right 2%, bottom 7% left 25%;
+    }
+}
+
+@media (max-width: 1920px) {
+    .home {
+        background-size:
+            25rem 25rem,
+            calc(61rem * 75 * 1585 / (100 * 977)) 75%,
+            23rem 23rem,
+            8rem 8rem,
+            10rem 10rem;
+        background-position:
+            left calc(61rem * 75 * 1585 / (100 * 977) - 18rem / 2) top calc(50% - 7.8rem),
+            left center,
+            right -6.9vw bottom -7.8vw,
+            left 52.4vw top 5vw,
+            left 45.3125vw bottom 5.4vw;
+        &__text {
+            width: 46.7%;
+        }
+    }
+}
+
+@media (max-width: 1536px) {
+    .home {
+        height: 57.8rem;
+        background-size:
+            25rem 25rem,
+            calc(50rem * 60 * 1585 / (100 * 977)) 85%,
+            20rem 20rem,
+            6rem 6rem,
+            8rem 8rem;
+        background-position:
+            left calc(50rem * 75 * 1585 / (100 * 977) - 45rem / 2) top calc(50% - 7.5rem),
+            left center,
+            right -6.9vw bottom 0,
+            left 52.4vw top 5vw,
+            left 45.3125vw bottom 5.4vw;
+        &__text {
+            width: 41%;
+            &Title {
+                font-size: 2em;
+            }
+            &Subtitle {
+                font-size: 1.1em;
+                line-height: 1.5em;
+            }
+            &Button {
+                margin-top: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .home {
+        background-size:
+            25rem 25rem,
+            calc(50rem * 40 * 1585 / (100 * 977)) 80%,
+            16rem 16rem,
+            5rem 5rem,
+            6rem 6rem;
+        background-position:
+            left calc(50rem * 75 * 1585 / (100 * 977) - 76rem / 2) top calc(50% - 7.5rem),
+            left center,
+            right -6.9vw bottom 0,
+            left 52.4vw top 5vw,
+            left 40.3125vw bottom 15vw;
+        &__text {
+            width: 42%;
+            &Title {
+                font-size: 1.65em;
+            }
+            &Subtitle {
+                font-size: 1em;
+                margin-top: 0.8rem;
+            }
+            &Button {
+                width: 14rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 817px) {
+    .home {
+        &__text {
+           width: 54%; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 35rem;
+        background:
+            url(../../Assets/Images/Planets/Orange_planetBig.png),
+            url(../../Assets/Images/Planets/Orange_planetSmall.png),
+            url(../../Assets/Images/Planets/Blue_planet.png);
+        background-size:
+            10rem 10rem,
+            5rem 5rem,
+            6rem 6rem;
+        background-repeat:
+            no-repeat,
+            no-repeat,
+            no-repeat;
+        background-position:
+            right -6.9vw bottom 0,
+            left 52.4vw top 5vw,
+            left 20vw bottom 50vw;
+        &__text {
+            width: 100%;
+            text-align: center;
+            padding: 1rem;
+            background: rgb(255, 255, 255, 0.1);
+            border-radius: 1rem;
+            box-shadow: 0 0 20px 0 rgb(16, 34, 49, 0.2);
+            &Title {
+                color: #ffffff;
+                & span {
+                    color: #97baff;
+                }
+            }
+            &Subtitle {
+                color: #b1b1b1;
+            }
+            &Button {
+                width: unset;
+                margin-bottom: unset;
+            }
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .home {
+        &::after {
+            content: unset;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .home {
+        &__text {
+            &Title {
+                font-size: 1.3em;
+            }
+            &Subtitle {
+                font-size: 0.8em;
+            }
+            &Button {
+                font-size: 0.77em;
+            }
+        }
+    }
+}

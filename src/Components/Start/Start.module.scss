@@ -1,0 +1,249 @@
+.start {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    position: relative;
+    background: url(../../Assets/Images/Start/Astronaut.png);
+    background-repeat: no-repeat;
+    background-size: 15.9375% auto;
+    background-position: right top 20%;
+    padding-top: 5%;
+    &__content {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: url(../../Assets/Images/Start/Background.png);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        background-position: top 5rem center;
+        display: flex;
+        justify-content: space-between;
+        &Box {
+            width: 402px;
+            height: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-top: 1rem;
+            &__index {
+                width: 1.5625rem;
+                height: auto;
+                font-size: 2.625em;
+                font-weight: 400;
+                color: #4472CA;
+                margin-right: 1rem;
+            }
+            &__text {
+                width: 369px;
+                height: auto;
+                font-size: 1.25em;
+                font-weight: 500;
+                line-height: 1.5em;
+                color: rgb(248, 248, 248, 0.7);
+                z-index: 2;
+            }
+            &:first-child {
+                margin-top: 18%;
+            }
+            &:nth-child(2) {
+                margin-top: 32%;
+            }
+            &:nth-child(3) {
+                margin-top: 17%;
+                margin-right: -8%;
+            }
+            &:last-child {
+                margin-top: 29%;
+            }
+        }
+    }
+}
+
+@media (max-width: 1920px) {
+    .start {
+        &__content {
+            &Box {
+                width: 320px;
+                &__index {
+                    width: auto;
+                    font-size: 2.1em;
+                    margin-right: 1rem;
+                }
+                &__text {
+                    width: auto;
+                    font-size: 1.1em;
+                }
+                &:first-child {
+                    margin-top: 20%;
+                }
+                &:nth-child(2) {
+                    margin-top: 34%;
+                }
+                &:nth-child(3) {
+                    margin-top: 18%;
+                    margin-right: unset;
+                }
+                &:last-child {
+                    margin-top: 31%;
+                    margin-right: -8%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .start {
+        &__content {
+            &Box {
+                justify-content: flex-start;
+                border-radius: 1rem;
+                &__index {
+                    font-size: 1.5em;
+                    color: #bcd3ff;
+                }
+                &__text {
+                    font-size: 1rem;
+                }
+                &:first-child {
+                    margin-top: 23%;
+                }
+                &:nth-child(2) {
+                    margin-top: 37%;
+                }
+                &:nth-child(3) {
+                    margin-top: 21%;
+                    margin-right: unset;
+                }
+                &:last-child {
+                    margin-top: 34%;
+                    margin-right: -8%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .start {
+        background: unset;
+        &__content {
+            flex-flow: column;
+            align-items: center;
+            background: unset;
+            &Box {
+                width: 100%;
+                padding: 1rem;
+                background: rgba(255, 255, 255, 0.2);
+                margin: 0;
+                margin-bottom: 1rem;
+                position: relative;
+                transition: all 0.3s linear;
+                &:hover {
+                    box-shadow: 0 0 20px 0px rgba(21, 52, 109, 0.6);
+                }
+                &:first-child {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: url(../../Assets/Images/Planets/Saturn.png);
+                        background-repeat: no-repeat;
+                        background-size: 3.4875rem 2rem;
+                        background-position: center center;
+                        z-index: 0;
+                        opacity: 0.3;
+                        filter: blur(0.4rem);
+                    }
+                }
+                &:nth-child(2) {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: url(../../Assets/Images/Planets/Red.png);
+                        background-repeat: no-repeat;
+                        background-size: 1.75rem 2rem;
+                        background-position: center center;
+                        z-index: 0;
+                        opacity: 0.3;
+                        filter: blur(0.4rem);
+                    }
+                }
+                &:nth-child(3) {
+                    margin: 0;
+                    margin-bottom: 1rem;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: url(../../Assets/Images/Planets/Pluto.png);
+                        background-repeat: no-repeat;
+                        background-size: 2rem 2rem;
+                        background-position: center center;
+                        z-index: 0;
+                        opacity: 0.3;
+                        filter: blur(0.4rem);
+                    }
+                }
+                &:last-child {
+                    margin: 0;
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: url(../../Assets/Images/Planets/Mars.png);
+                        background-repeat: no-repeat;
+                        background-size: 2rem 2rem;
+                        background-position: center center;
+                        z-index: 0;
+                        opacity: 0.3;
+                        filter: blur(0.4rem);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .start {
+        &__content {
+            &Box {
+                &__text {
+                    font-size: 0.86rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .start {
+        &__content {
+            &Box {
+                &__text {
+                    word-break: break-all;
+                }
+            }
+        }
+    }
+}
